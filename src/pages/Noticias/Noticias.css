@@ -1,0 +1,154 @@
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: #f0f0f0;
+}
+
+.news-card img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.featured-image {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Tarjeta base */
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover uniforme para todas */
+.card:hover,
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título general */
+.card-title,
+.news-title {
+  font-weight: 600;
+  color: #dc2626;
+  font-size: 1.1rem;
+}
+
+/* Título del detalle */
+.detail-title {
+  color: #dc2626;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* Botón */
+.animated-button {
+  transition: all 0.3s ease-in-out;
+  will-change: transform;
+}
+
+.animated-button:hover {
+  transform: none !important;
+  opacity: 0.95;
+}
+
+/* Botón rojo */
+.btn-red {
+  background-color: #ef4444;
+  border: none;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-red:hover {
+  background-color: #dc2626;
+}
+
+/* Tarjeta destacada tipo glassmorphism */
+.featured-card {
+  position: relative;
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Etiqueta "Destacada" tipo ribbon */
+.ribbon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: gold;
+  color: white;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  animation: fadeIn 0.8s ease-in-out;
+  z-index: 10;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ícono del autor */
+.autor-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Comentarios */
+.comentario {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.simulado {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+/* Ajuste final para cards normales */
+.news-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
